@@ -1,7 +1,7 @@
 ---
 - name: Enable nginx repo.
   template:
-    src: nginx.repo.j2
+    src: "{{ nginx_yum_repo_template }}"
     dest: /etc/yum.repos.d/nginx.repo
     owner: root
     group: "{{ root_group }}"

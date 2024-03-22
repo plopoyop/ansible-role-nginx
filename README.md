@@ -155,6 +155,9 @@ Configures Nginx's [`log_format`](http://nginx.org/en/docs/http/ngx_http_log_mod
 
 (For RedHat/CentOS only) Set this to `false` to disable the installation of the `nginx` yum repository. This could be necessary if you want the default OS stable packages, or if you use Satellite.
 
+    nginx_yum_repo_template: "nginx.repo.j2"
+(For RedHat/CentOS only) Allow to use your own repo file template.
+
     nginx_service_state: started
     nginx_service_enabled: yes
 
